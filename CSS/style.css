@@ -31,6 +31,8 @@ body {
 .mobile-img {
     position: absolute;
     top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
     z-index: -1;
     opacity: 0.1;
     width: 375px;
@@ -98,21 +100,25 @@ p {
 
 .spotify-mobile {
     height: 17px;
+    width: 56px;
     margin-right: 23px;
 }
 
 .apple-mobile {
     height: 17px;
+    width: 45px;
     margin-right: 25px;
 }
 
 .google-mobile {
     height: 11px;
+    width: 73px;
     margin-right: 16px;
 }
 
 .pocket-mobile {
     height: 15px;
+    width: 77px;
 }
 
 /*Form*/
@@ -134,8 +140,119 @@ p {
     font-size: 14px;
     line-height: 28px;
     color: #121725;
-    padding: 9px 32px;
+    padding: 9px 0px;
     width: 327px;
     font-weight: bold;
     margin-top: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .tablet-img {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    /*Header*/
+
+    header img {
+        margin: 50px 0px 152px 39px;
+    }
+
+    /*Article*/
+
+    article {
+        width: 635px;
+        height: 509px;
+        background-color: #121725;
+        margin: 0 0 153px 39px;
+        padding-top: 91px;
+    }
+
+    h1, p {
+        text-align: left;
+    }
+
+    h1, span {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        margin: 31px 0 40px;
+        width: 445px;
+    }
+
+    /*Form*/
+    
+    form {
+        background-color: #2C344B;
+        border-radius: 28px;
+        width: 427px;
+        height: 56px;
+        margin-bottom: 64px;
+    }
+
+    .email {
+        padding: 14px 0 14px 32px;
+        width: 250px;
+    }
+
+    .submit {
+        width: 162px;
+        margin: 5px;
+    }
+
+    /*Icons*/
+
+    .icons {
+        display: flex;
+        width: 539px;
+        height: 29px;
+        align-items: center;
+    }
+
+    .icons img {
+        filter: invert(38%) sepia(40%) saturate(337%) hue-rotate(187deg) brightness(96%) contrast(96%);
+        opacity: 0.5;
+    }
+
+    .spotify {
+        width: 96px;
+        height: 29px;
+        margin-right: 40px;
+    }
+
+    .apple {
+        width: 78px;
+        height: 29px;
+        margin-right: 41px;
+    }
+
+    .google {
+        width: 125px;
+        height: 18px;
+        margin-right: 27px;
+    }
+
+    .pocket {
+        width: 129px;
+        height: 26px;
+    }
+
+    /*Dots*/
+
+    .dots {
+        display: block;
+        margin-left: 30px;
+    }
 }
