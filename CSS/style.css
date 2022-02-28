@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Chivo-Light.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url(../fonts/Chivo-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: 'Chivo', sans-serif;
+    font-style: normal;
+}
+
+body {
+    background-color: #121725;
+}
+
+.mobile-img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.1;
+    width: 375px;
+}
+
+.desktop, .tablet, .dots, .icons {
+    display: none;
+}
+
+/*Header*/
+header img {
+    margin: 62px auto 57px;
+    width: 134.85px;
+    height: 56px;
+    display: block;
+}
+
+/*Article*/
+
+article {
+    margin: 57px auto 94px;
+    width: 327px;
+}
+
+h1, p {
+    text-align: center;
+    font-weight: normal;
+}
+
+h1, span {
+    font-size: 26px;
+    line-height: 38px;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #54E6AF;
+}
+
+span {
+    color: #FFF;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #C2CBE5;
+    margin: 16px 0 33px;
+}
+
+/*Icons*/
+
+.mobile-icons {
+    display: flex;
+    width: 315px;
+    height: 17px;
+    margin: 33px auto 48px;
+    align-items: center;
+}
+
+.mobile-icons img {
+    filter: invert(38%) sepia(40%) saturate(337%) hue-rotate(187deg) brightness(96%) contrast(96%);
+    opacity: 0.5;
+}
+
+.spotify-mobile {
+    height: 17px;
+    margin-right: 23px;
+}
+
+.apple-mobile {
+    height: 17px;
+    margin-right: 25px;
+}
+
+.google-mobile {
+    height: 11px;
+    margin-right: 16px;
+}
+
+.pocket-mobile {
+    height: 15px;
+}
+
+/*Form*/
+
+.email {
+    background-color: #2C344B;
+    border-radius: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 9px 32px;
+    width: 327px;
+    font-weight: bold;
+}
+
+.submit {
+    background-color: #54E6AF;
+    border-radius: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #121725;
+    padding: 9px 32px;
+    width: 327px;
+    font-weight: bold;
+    margin-top: 16px;
+}
