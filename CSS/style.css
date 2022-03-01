@@ -28,6 +28,10 @@ body {
     background-color: #121725;
 }
 
+.desktop, .tablet, .dots, .icons {
+    display: none;
+}
+
 .mobile-img {
     position: absolute;
     top: 0;
@@ -36,10 +40,6 @@ body {
     z-index: -1;
     opacity: 0.1;
     width: 375px;
-}
-
-.desktop, .tablet, .dots, .icons {
-    display: none;
 }
 
 /*Header*/
@@ -158,6 +158,8 @@ p {
         right: 0;
         z-index: -1;
         opacity: 0.8;
+        width: 491px;
+        height: 767px;
     }
 
     /*Header*/
@@ -254,5 +256,55 @@ p {
     .dots {
         display: block;
         margin-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .mobile, .tablet {
+        display: none;
+    }
+
+    .desktop-img {
+        position: absolute;
+        top: 130px;
+        right: 0px;
+        display: block;
+        width: 888px;
+        height: 640px;
+        z-index: -1;
+        opacity: 0.8;
+    }
+
+    /*Header*/
+
+    header img {
+        margin: 102px 0 103px 165px;
+    }
+
+    /*Article*/
+
+    article {
+        width: 723px;
+        height: 509px;
+        margin: 0 0 130px 165px;
+        padding: 88px 58px 0 0;
+    }
+
+    h1, span {
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    p {
+        margin: 24px 0 40px;
+    }
+
+    /*Dots*/
+
+    .dots {
+        position: absolute;
+        top: 718px;
+        right: 0;
+        margin: 0;
     }
 }
