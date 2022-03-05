@@ -95,6 +95,7 @@ p {
 
 .mobile-icons img {
     filter: invert(38%) sepia(40%) saturate(337%) hue-rotate(187deg) brightness(96%) contrast(96%);
+    opacity: 0.75;
 }
 
 .spotify-mobile {
@@ -252,6 +253,7 @@ select:-webkit-autofill:focus {
 
     .icons img {
         filter: invert(38%) sepia(40%) saturate(337%) hue-rotate(187deg) brightness(96%) contrast(96%);
+        opacity: 0.75;
     }
 
     .spotify {
