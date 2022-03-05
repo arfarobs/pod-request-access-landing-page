@@ -186,7 +186,6 @@ select:-webkit-autofill:focus {
         top: 0;
         right: 0;
         z-index: -1;
-        opacity: 0.8;
         width: 491px;
         height: 767px;
     }
@@ -301,7 +300,6 @@ select:-webkit-autofill:focus {
         width: 888px;
         height: 640px;
         z-index: -1;
-        opacity: 0.8;
     }
 
     /*Header*/
