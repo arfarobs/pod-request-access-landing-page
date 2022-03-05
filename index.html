@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
     <link rel="stylesheet" href="./CSS/style.css" type="text/css"/>
     <title>Pod</title>
+    <script src="./JS/script.js" defer type="text/javascript"></script>
   </head>
   <body>
 
@@ -32,9 +33,10 @@
           <img class="google-mobile" src="./assets/desktop/google-podcasts.svg" aria-hidden="true" alt=""/>
           <img class="pocket-mobile" src="./assets/desktop/pocket-casts.svg" aria-hidden="true" alt=""/>
         </div>
-        <form>
-          <input class="email" type="email" placeholder="Email address" inputmode="email" name="email" required="required"/>
-          <input class="submit" type="submit" value="Request Access"/>
+        <form id="form" action="#" name="form">
+          <input class="email" id="email" type="email" placeholder="Email address" name="email"/>
+          <input class="submit" id="submit" type="submit" value="Request Access" />
+          <p id="text"></p>
         </form>
         <div class="icons" role="presentation">
           <img class="spotify" src="./assets/desktop/spotify.svg" aria-hidden="true" alt=""/>
